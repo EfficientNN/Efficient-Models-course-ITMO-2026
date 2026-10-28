@@ -32,10 +32,9 @@ LLAMA_LINEAR_SHAPES: tuple[tuple[str, int, int], ...] = (
     ("down_proj", HIDDEN_SIZE, INTERMEDIATE_SIZE),  # (2048, 8192)
 )
 
-# lm_head tied с embed — большой; для бенча матмула полезен отдельно
 LM_HEAD_SHAPE = ("lm_head", VOCAB_SIZE, HIDDEN_SIZE)  # (128256, 2048)
 
-# Число токенов (строк X) по заданию
+# Число токенов (строк X)
 ACTIVATION_ROWS = (128, 512, 2048)
 
 MODEL_ID = "unsloth/Llama-3.2-1B-Instruct"

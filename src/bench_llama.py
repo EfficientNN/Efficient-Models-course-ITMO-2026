@@ -23,7 +23,7 @@ WARMUP = 10
 ITERS = 50
 WEIGHT_STD = 0.02
 PACK_BITS = PACK_BITS_INT8
-INCLUDE_LM_HEAD = True  # True — добавить (128256, 2048); долго компилируется
+INCLUDE_LM_HEAD = True
 
 
 def time_ms(fn, warmup: int = WARMUP, iters: int = ITERS) -> float:
